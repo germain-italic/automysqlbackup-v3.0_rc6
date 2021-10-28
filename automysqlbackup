@@ -443,7 +443,7 @@ parse_configuration () {
     mysql_opt=()
 
     # OPT string for use with mysqldump fullschema
-    opt_fullschema=( '--all-databases' '--routines' '--no-data' )
+    opt_fullschema=( '--all-databases' '--routines' '--no-data' '--lock-tables=0')
 
 	# OPT string for use with mysqlstatus
 	opt_dbstatus=( '--status' )
